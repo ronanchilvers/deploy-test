@@ -6,7 +6,7 @@ shared:
     - shared.yaml
 writables:
   after:
-    - php -v
+    - php  -r 'echo "writable after\n";'
   paths:
     - writable
 clear_paths:
@@ -14,4 +14,4 @@ clear_paths:
     - delete.txt
 activate:
   after:
-    - php -v
+    - php  -r    'echo "writable after\n";'
