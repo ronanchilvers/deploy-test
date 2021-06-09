@@ -1,0 +1,17 @@
+---
+shared:
+  folders:
+    - shared
+  files:
+    - shared.yaml
+writables:
+  after:
+   - /usr/bin/env php -r 'echo "writable after hook\n";'
+  paths:
+    - writable
+clear_paths:
+  paths:
+    - delete.txt
+activate:
+  after:
+   - /usr/bin/env php -r 'echo "activate after hook\n";'
