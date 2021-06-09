@@ -6,7 +6,7 @@ shared:
     - shared.yaml
 writables:
   after:
-   - /usr/bin/env php -r 'echo "writable after hook\n";'
+   - /usr/local/bin/php -r 'echo "writable after hook\n";'
   paths:
     - writable
 clear_paths:
@@ -14,4 +14,4 @@ clear_paths:
     - delete.txt
 activate:
   after:
-   - /usr/bin/env php -r 'echo "activate after hook\n";'
+   - /usr/local/bin/php -r 'echo "activate after hook\n";'
