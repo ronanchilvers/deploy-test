@@ -6,7 +6,7 @@ shared:
     - shared.yaml
 writables:
   after:
-    - php -r 'echo "foobar\n";'
+    - echo "foobar foobar"
   paths:
     - writable
 clear_paths:
