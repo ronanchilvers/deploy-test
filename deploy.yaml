@@ -1,4 +1,6 @@
 ---
+cleanup:
+  keep_deployments: 10
 shared:
   folders:
     - shared
